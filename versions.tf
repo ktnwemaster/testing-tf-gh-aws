@@ -8,7 +8,5 @@ terraform {
 }
 
 provider "aws" {
-  shared_config_files      = ["/home/vagrant/.aws/config"]
-  shared_credentials_files = ["/home/vagrant/.aws/credentials"]
-  profile                  = "khin-master"
+  region                   = var.aws_region
 }
